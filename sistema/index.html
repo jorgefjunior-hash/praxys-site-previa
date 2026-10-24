@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>O sistema da Praxys, por dentro · Praxys</title>
+  <meta name="description" content="O sistema da Praxys, por dentro. 1 minuto, em telas reais com nomes fictícios."/>
+  <meta property="og:type" content="video.other"/>
+  <meta property="og:url" content="https://www.praxys.med.br/sistema/"/>
+  <meta property="og:title" content="O sistema da Praxys, por dentro"/>
+  <meta property="og:description" content="1 minuto, em telas reais com nomes fictícios."/>
+  <meta property="og:image" content="https://www.praxys.med.br/sistema/PDS_pagina_poster.jpg"/>
+  <!-- Página do link da DM (palavras AGENDA e LUCRO no Instagram): fora do Google e do sitemap -->
+  <meta name="robots" content="noindex,follow"/>
+  <link rel="canonical" href="https://www.praxys.med.br/sistema/"/>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml"/>
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"/>
+  <link rel="stylesheet" href="../praxys-site.css?v=20260911"/>
+
+  <!-- GA4 + Pixel do Meta + origem (UTM): o mesmo script do site inteiro -->
+  <script src="../praxys-tracking.js?v=20260921"></script>
+
+  <style>
+    /* Quem chega aqui tocou no link da DM do Instagram: a página nasce para o celular.
+       Vídeo vertical 9:16; no computador a coluna para em 420 px e fica no centro. */
+    html,body{background:#0D1B3E;color:#fff;margin:0;}
+    .sis{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;max-width:420px;margin:0 auto;box-sizing:border-box;padding:22px 18px 28px;}
+    .sis-top{display:flex;align-items:center;gap:10px;}
+    .sis-top svg{width:26px;height:22px;color:#fff;}
+    .sis-top .nome{font-family:var(--sans);font-weight:700;letter-spacing:.22em;font-size:.95rem;}
+    .sis-meio{flex:1;display:flex;flex-direction:column;justify-content:center;padding:24px 0 8px;}
+    h1{font-family:var(--sans);font-weight:800;font-size:1.6rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 8px;text-wrap:balance;}
+    .sub{margin:0 0 18px;font-size:1rem;line-height:1.45;opacity:.85;}
+    .tela{position:relative;width:100%;aspect-ratio:9/16;background:#000;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.35);}
+    .tela video{display:block;width:100%;height:100%;object-fit:contain;background:#000;}
+    .btn-wa{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:18px;width:100%;box-sizing:border-box;padding:17px 18px;border-radius:10px;background:#fff;color:#0D1B3E;font-family:var(--sans);font-weight:700;font-size:1.05rem;text-decoration:none;}
+    .btn-wa svg{width:22px;height:22px;flex:none;}
+    .btn-wa:active{transform:translateY(1px);}
+    .assina{margin:16px 0 0;font-size:.9rem;line-height:1.5;opacity:.8;text-align:center;}
+    .assina span{white-space:nowrap;}
+    @media (min-width:760px){
+      .sis{padding:36px 0 40px;}
+      h1{font-size:1.9rem;text-align:center;}
+      .sub{text-align:center;}
+      /* No computador o vídeo encolhe com a altura da janela para o botão aparecer sem rolar. */
+      .tela,.btn-wa{width:min(100%,calc((100vh - 290px) * 9 / 16));min-width:300px;margin-left:auto;margin-right:auto;}
+      .sis-top{justify-content:center;}
+    }
+  </style>
+</head>
+<body>
+<main class="sis">
+  <div class="sis-top">
+    <svg viewBox="6 13 73 61" aria-hidden="true"><path d="M 8 66 L 34 66 L 64 30" fill="none" stroke="currentColor" stroke-width="12" stroke-linejoin="miter"/><polygon points="76.8,14.6 72.5,37 55.5,23" fill="currentColor"/></svg>
+    <span class="nome">PRAXYS</span>
+  </div>
+
+  <div class="sis-meio">
+    <h1>O sistema da Praxys, por dentro</h1>
+    <p class="sub">1 minuto, em telas reais com nomes fictícios.</p>
+    <div class="tela">
+      <video id="v" controls playsinline preload="metadata" poster="PDS_pagina_poster.jpg">
+        <source src="PDS_pagina.mp4?v=2410" type="video/mp4"/>
+      </video>
+    </div>
+    <a id="wa" class="btn-wa" data-track="sistema_whatsapp" href="https://wa.me/5521999426534?text=Vi%20o%20v%C3%ADdeo%20do%20sistema%20e%20quero%20saber%20como%20funciona%20no%20meu%20consult%C3%B3rio" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+      Falar com a equipe no WhatsApp
+    </a>
+    <p class="assina"><span>Jorge Ferreira · fundador da Praxys ·</span> <span>médico, usa o sistema no próprio consultório</span></p>
+  </div>
+</main>
+
+<script>
+(function(){
+  var q=new URLSearchParams(location.search);
+  var src=(q.get('utm_source')||'').toLowerCase();
+
+  // A palavra da DM (utm_content = agenda | lucro) entra na frase do WhatsApp, em maiúsculas.
+  // Só letras, até 20: qualquer outra coisa vira a frase sem parênteses.
+  var palavra=(q.get('utm_content')||'').trim();
+  if(!/^[A-Za-z]{2,20}$/.test(palavra)) palavra='';
+  palavra=palavra.toUpperCase();
+  var frase='Vi o vídeo do sistema'+(palavra?' ('+palavra+')':'')+' e quero saber como funciona no meu consultório';
+  document.getElementById('wa').href='https://wa.me/5521999426534?text='+encodeURIComponent(frase);
+
+  // Origem: os links da DM já trazem utm_medium=dm, e o praxys-tracking.js grava como veio.
+  // Se algum link chegar do Instagram sem utm_medium, o script completaria com "pago":
+  // aqui é DM (orgânico), não anúncio, então corrige para instagram / dm / palavra.
+  // Link de anúncio (utm_medium=paid ou fbclid) nunca entra aqui: grava como veio.
+  if(src==='instagram' && !q.get('utm_medium') && !q.get('fbclid')){
+    try{
+      var o=JSON.parse(localStorage.getItem('praxys_origem')||'null');
+      if(o && o.utm_source==='instagram' && o.utm_medium==='pago'){
+        o.utm_medium='dm';
+        if(!q.get('utm_campaign')) o.utm_campaign='palavra';
+        localStorage.setItem('praxys_origem',JSON.stringify(o));
+      }
+    }catch(_){}
+  }
+
+  // Acesso à página: contador + GA4 + evento personalizado no Pixel
+  // (sistema_visita_agenda / sistema_visita_lucro = DM da palavra; sistema_visita = outra origem)
+  try{ window.praxysTrack && praxysTrack(palavra?'sistema_visita_'+palavra.toLowerCase():'sistema_visita'); }catch(_){}
+
+  // Quanto do vídeo foi visto: play, metade, fim (uma vez cada)
+  var v=document.getElementById('v'), feito={};
+  function marca(ev){ if(feito[ev]) return; feito[ev]=1; try{ window.praxysTrack && praxysTrack(ev); }catch(_){} }
+  v.addEventListener('play',function(){ marca('sistema_play'); });
+  v.addEventListener('timeupdate',function(){ if(v.duration && v.currentTime/v.duration>=0.5) marca('sistema_50'); });
+  v.addEventListener('ended',function(){ marca('sistema_fim'); });
+})();
+</script>
+</body>
+</html>
